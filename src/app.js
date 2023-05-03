@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const taskRoutes = require('./routes/taskRoutes');
-const mongoUrl = 'mongodb://localhost:27017';
-
+// const mongoUrl = 'mongodb://localhost:27017';
+const mongoUrl = 'mongodb://myUserAdmin:jigs6599@35.244.13.151:27017/test?authSource=admin';
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 //const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const database = require('./utils/database');
